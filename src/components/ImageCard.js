@@ -1,9 +1,9 @@
 import React from "react";
 
-const ImageCard = ({ image }) => {
+const ImageCard = ({ image, onTagClick }) => {
 
 
-  const tags = image.tags.split(',').slice(0, 3);
+  const tags = image.tags.split(',').slice(0, 4);
 
 
   return (
@@ -40,11 +40,11 @@ const ImageCard = ({ image }) => {
             </li>
           </ul>
         </div>
-        <div className="px-6 py-4">
+        <div className="px-2 py-2">
           {tags.map((tag, index) => (
 
-            <span key={index} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ">
-              #{tag}
+            <span onClick={() => onTagClick?.(tag)} key={index} className="cursor-pointer hover:bg-blue-500 hover:text-white inline-block bg-gray-200 rounded-full px-3 py-1 mt-1 text-sm font-semibold text-gray-700 mr-2 ">
+                {tag}
             </span>
 
           ))}
