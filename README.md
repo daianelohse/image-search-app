@@ -51,7 +51,9 @@ The app will be running at:
 http://localhost:5173
 ```
 
-📚 Features
+---
+
+## 📚 Features
 
 - Search for images by keyword
 
@@ -61,7 +63,9 @@ http://localhost:5173
 
 - Loading and error states
 
-✨ Future Improvements
+---
+
+## ✨ Future Improvements
 
 - Add pagination or infinite scroll
 
