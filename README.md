@@ -22,25 +22,34 @@ The app allows users to search for images via an external API and displays them 
 Clone the repository:
 ```bash
 git clone https://github.com/daianelohse/image-search-app.git
+```
 
 Navigate to the project folder:
 
+```bash
 cd image-search-app
+```
 
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 
 Run the development server:
 
+```bash
 npm run dev
+```
 
 
 The app will be running at:
 
+```bash
 http://localhost:5173
+```
 
 📚 Features
 
