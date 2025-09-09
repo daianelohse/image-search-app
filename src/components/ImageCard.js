@@ -8,14 +8,16 @@ const ImageCard = ({ image, onTagClick }) => {
 
   return (
 
-    <div className="bg-white rounded-lg shadow">
+    
+    <>
+
+     <div className="bg-white rounded-lg shadow text-sm">
 
       <div className="w-full h-96">
         <img
           src={image.webformatURL}
           alt="Imagem aleatória"
-          className="w-full h-full object-cover rounded-t-lg"
-        />
+          className="w-full h-full object-cover rounded-t-lg" />
 
       </div>
 
@@ -44,14 +46,13 @@ const ImageCard = ({ image, onTagClick }) => {
           {tags.map((tag, index) => (
 
             <span onClick={() => onTagClick?.(tag)} key={index} className="cursor-pointer hover:bg-blue-500 hover:text-white inline-block bg-gray-200 rounded-full px-3 py-1 mt-1 text-sm font-semibold text-gray-700 mr-2 ">
-                {tag}
+              {tag}
             </span>
-
           ))}
-
         </div>
       </div>
-    </div>
+      </div>
+    </>
 
   )
 }
